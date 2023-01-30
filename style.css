@@ -1,6 +1,9 @@
-body{
-    margin: 0;
-}
+body {
+    /* overflow-y: hidden; Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+
 .slide-container{
     position: relative;
     width: 100%;
@@ -20,8 +23,9 @@ body{
 .last{
     right: 10px;
 }
-.first{
+.first {
     left: 10px;
+    
 }
 
 .caption{
@@ -38,46 +42,22 @@ body{
     display: none;
 }
 
+@media screen and (min-width: 375px) {
 
-@media screen and (min-width: 412px) {
     .first {
-        left: -15px;
-        margin-top: -219px;
-        font-size: 18px;
-    } 
+    left: -19px;
+    margin-top: -90px;
+}
 
-    .last {
-        right: -10px;
-        margin-top: -219px;
-        font-size: 18px;
+  .last {
+        right: -19px;
+        margin-top: -90px;
+      
     }
 
     .arrow {
         
-       background-color: rgb(255, 255, 255, 0);
+       background-color: rgb(255, 255, 255, 1);
         
-    }
-    
-  }
-
-  @media screen and (min-width: 375px) {
-
-    .first {
-        left: -15px;
-        margin-top: -155px;
-        font-size: 18px;
     } 
-
-    .last {
-        right: -10px;
-        margin-top: -155px;
-        font-size: 18px;
-    }
-
-    .arrow {
-        
-       background-color: rgb(255, 255, 255, 0);
-        
-    }
-    
   }
